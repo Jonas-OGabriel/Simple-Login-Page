@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.circulo {
+    background-color: orange;
+    width: 500px;
+    height: 250px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    overflow: hidden;
+    z-index: auto;
+}
+
+@keyframes blink {
+    10%, 11% {
+        height: 1px; 
+    }
+    11%, 20% {
+        height: 30px;
+    }
+    20%, 100% {
+        height: 30px;
+    }
+}
+
+
+.olhos {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+    left: 50%;
+}
+
+.globo {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+    animation: blink 5s infinite;
+}
+
+.boca {
+    background-color: black;
+    width: 70px;
+    height: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: hidden;
+    position: relative;
+    top: 110px;
+    left: 55%;
+    z-index: 3;
+}
+
